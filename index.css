@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.boardResults {
+  font-size:16px;
+  text-align: center;
+  color:black;
+  font-weight:bold;
+}
+nav {
+  text-align: center;
+  border-bottom: 1px solid black;
+  margin-bottom: 10px;
+  padding:20px 0;
+}
+nav button{
+  font-size:20px;
+  margin:0 auto;
+  padding:5px 20px;
+  border-radius: 10px;
+  display:inline-block;
+  cursor: pointer;
+}
+main {
+  text-align: center
+}
+.container {
+  display: inline-block;
+}
+.title {
+  font-size: 20px;
+  text-align: center;
+  font-weight: bold;
+}
+.tile {
+  cursor: pointer;
+}
+div > span{
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  position: relative
+}
+div > span > span{
+  position: absolute;
+  font-size: 70px;
+  font-family: Sans-Serif;
+  color: lightgrey;
+  left: 30px;
+  display: none;
+}
+div > span > span:nth-child(2){
+  left: 28px;
+}
+
+.firstRow span.tile:nth-child(1),
+.secondRow span.tile:nth-child(1),
+.secondRow span.tile:nth-child(2),
+.firstRow span.tile:nth-child(2) {
+  border-right: 5px solid grey;
+  border-bottom: 5px solid grey;
+}
+.firstRow span.tile:nth-child(3),
+.secondRow span.tile:nth-child(3) {
+  border-bottom: 5px solid grey;
+}
+.thirdRow span.tile:nth-child(1),
+.thirdRow span.tile:nth-child(2){
+  border-right: 5px solid grey;
+}
